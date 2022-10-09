@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <section class="myapp">
+        <div class="container">
+            <div class="myapp-header">
+                <h1>Task list aplication</h1>
+                <p>Список завдань</p>
+            </div>
+            <div class="myapp-section">
+                <div class="myapp-item calendar">
+                    <div class="calendar">
+                        <div class="mounth">
+                            <i class="fas fa-angle-left prev"></i>
+                            <div class="date">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                            <i class="fas fa-angle-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sut</div>
+                        </div>
+                        <div class="days">
+                        </div>
+                    </div>
+                </div>
+                <div class="myapp-item tasks">
+                    <ul class="tasksList"></ul>
+                    <div class="add-task">
+                        <div class="header-add-task">
+                            <h1>Додати нове завдання</h1>
+                        </div>
+                        <form id="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required>
+                                <small id="emailHelp" class="form-subtitle">Чим займаємось, скільки часу тратимо, який результат отримуємо</small>
+                            </div>
+                            <button type="submit" class="form-btn" id="add_input">Додати</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>

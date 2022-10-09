@@ -1,0 +1,44 @@
+@media(max-width: 1230px) {
+    .myapp-header {
+        display: block;
+        text-align: center;
+    }
+
+    .myapp-header h1 {
+        font-size: 40px;
+        text-shadow: none;
+    }
+
+    .myapp-header p {
+        font-size: 35px;
+    }
+
+    .myapp-section {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .myapp-item.calendar {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .myapp-header {
+        display: block;
+        text-align: center;
+    }
+
+    .myapp-header h1 {
+        font-size: 30px;
+        text-shadow: none;
+    }
+
+    .myapp-header p {
+        font-size: 25px;
+    }
+
+    .myapp-item.calendar {
+        display: none;
+    }
+}
